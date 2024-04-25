@@ -1,0 +1,83 @@
+name: souqna_app
+description: Graduation Project
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.9
+  intl: ^0.18.0
+  intl_phone_field: ^3.2.0
+  sign_in_button: ^3.2.0
+  connectivity_plus: ^5.0.2
+  shared_preferences: ^2.2.2
+  get: ^4.6.5
+  flutter_native_splash: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/TajawalMedium.ttf
+          weight: 500
+        - asset: assets/fonts/TajawalRegular.ttf
+          weight: 400
+        - asset: assets/fonts/TajawalBold.ttf
+          weight: 700
+    - family: Noto Sans Arabic
+      fonts:
+        - asset: assets/fonts/NotoSansArabicMedium.ttf
+          weight: 500
+        - asset: assets/fonts/NotoSansArabicBold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoSansArabicRegular.ttf
+          weight: 400
+        - asset: assets/fonts/NotoSansArabicSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/NotoSansArabicLight.ttf
+          weight: 300
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/InterRegular.ttf
+          weight: 400
+        - asset: assets/fonts/InterMedium.ttf
+          weight: 500
+        - asset: assets/fonts/InterSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/InterLight.ttf
+          weight: 300
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/CairoRegular.ttf
+          weight: 400
+        - asset: assets/fonts/CairoMedium.ttf
+          weight: 500
